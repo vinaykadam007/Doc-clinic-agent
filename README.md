@@ -1,10 +1,10 @@
-Clinic Agent (Doctor Appointment Multi-Agent System)
+# Clinic Agent (Doctor Appointment Multi-Agent System)
 A conversational AI-powered multi-agent system that simulates patient-agent and scheduling-agent collaboration for automated doctor appointment booking.
 
-🔗 Overview
+🔗 ##Overview
 This repository implements Clinic Agent: a modular, Python‑based multi-agent framework using LangChain and OpenAI LLMs. Each agent performs specialized tasks—such as patient interaction, doctor availability lookup, and appointment confirmation—to deliver a seamless booking experience via natural language conversations.
 
-🧭 Features
+🧭 ##Features
 Patient Agent
 Initiates and guides the conversation with the user to gather required information (e.g. symptoms, preferred time slots, doctor specialization).
 
@@ -17,48 +17,48 @@ Manages booking logic—reserves slots, generates confirmations, handles conflic
 Conversation Coordinator
 Orchestrates agent interactions and context flow to ensure smooth handoffs and comprehensive dialogue management.
 
-🚀 Installation
+🚀 ##Installation
 Clone the repository:
 
-```bash
+bash
 Copy
 Edit
-git clone https://github.com/sunnysavita10/doctor-appoitment-multiagent.git
+```git clone https://github.com/sunnysavita10/doctor-appoitment-multiagent.git
 cd doctor-appoitment-multiagent
 Set up Python environment:```
 
-```bash
+bash
 Copy
 Edit
-python3 -m venv venv
+```python3 -m venv venv
 source venv/bin/activate
 Install required libraries:```
 
-```bash
+bash
 Copy
 Edit
-pip install -r requirements.txt
+```pip install -r requirements.txt
 Configure your OpenAI API keys & other agent parameters via .env (copy from .env.example):```
 
-```text
+text
 Copy
 Edit
-OPENAI_API_KEY=your_openai_api_key_here```
+```OPENAI_API_KEY=your_openai_api_key_here```
 
 ⚙️ Usage
 Run the agent orchestration script to start the booking flow:
 
-```bash
+bash
 Copy
 Edit
-python main.py
+```python main.py
 Interact through console prompts (or integrate with a UI layer)—enter symptoms, view suggested doctors and slots, confirm appointment, receive confirmation output.```
 
 📂 Repository Structure
-```bash
+bash
 Copy
 Edit
-.
+```.
 ├── main.py              # Entry point orchestrating agents
 ├── patient_agent.py     # Patient interaction logic
 ├── availability_agent.py# Doctor lookup & availability logic
@@ -68,10 +68,10 @@ Edit
 └── README.md            # Project documentation```
 
 🧑‍💻 Example Session
-```less
+less
 Copy
 Edit
-[PatientAgent] Hello! What health concern or specialty would you like to consult today?
+```[PatientAgent] Hello! What health concern or specialty would you like to consult today?
 > I have a fever and sore throat.
 
 [AvailabilityAgent] Found Dr. Smith, Dr. Lee, Dr. Patel. Available slots:…

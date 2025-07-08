@@ -21,59 +21,49 @@ Orchestrates agent interactions and context flow to ensure smooth handoffs and c
 Clone the repository:
 
 ```bash
-Copy
-Edit
-git clone https://github.com/sunnysavita10/doctor-appoitment-multiagent.git
+git clone https://github.com/vinaykadam007/Doc-clinic-agent.git
 cd doctor-appoitment-multiagent
 Set up Python environment:
 ```
 
 ```bash
-Copy
-Edit
 python3 -m venv venv
 source venv/bin/activate
 Install required libraries:
 ```
 
-bash
-Copy
-Edit
-```pip install -r requirements.txt
-Configure your OpenAI API keys & other agent parameters via .env (copy from .env.example):```
+```bash
+pip install -r requirements.txt
+Configure your OpenAI API keys & other agent parameters via .env (copy from .env.example):
+```
 
-text
-Copy
-Edit
-```OPENAI_API_KEY=your_openai_api_key_here```
+```text
+OPENAI_API_KEY=your_openai_api_key_here
+```
 
 ⚙️ **Usage**
 Run the agent orchestration script to start the booking flow:
 
-bash
-Copy
-Edit
-```python main.py
-Interact through console prompts (or integrate with a UI layer)—enter symptoms, view suggested doctors and slots, confirm appointment, receive confirmation output.```
+```bash
+python main.py
+Interact through console prompts (or integrate with a UI layer)—enter symptoms, view suggested doctors and slots, confirm appointment, receive confirmation output.
+```
 
 📂 **Repository Structure**
-bash
-Copy
-Edit
-```.
+```bash
+.
 ├── main.py              # Entry point orchestrating agents
 ├── patient_agent.py     # Patient interaction logic
 ├── availability_agent.py# Doctor lookup & availability logic
 ├── scheduler_agent.py   # Booking/rescheduling logic
 ├── requirements.txt
 ├── .env.example         # Sample environment configuration
-└── README.md            # Project documentation```
+└── README.md            # Project documentation
+```
 
 🧑‍💻 **Example Session**
-less
-Copy
-Edit
-```[PatientAgent] Hello! What health concern or specialty would you like to consult today?
+```less
+[PatientAgent] Hello! What health concern or specialty would you like to consult today?
 > I have a fever and sore throat.
 
 [AvailabilityAgent] Found Dr. Smith, Dr. Lee, Dr. Patel. Available slots:…
@@ -81,7 +71,8 @@ Edit
 
 [SchedulerAgent] Booking confirmed!  
 Appointment: Dr. Lee — 2025‑07‑08 at 15:00  
-Confirmation ID: ABC123```
+Confirmation ID: ABC123
+```
 
 ⚙️ **Extensibility & Customization**
 Add new agents (e.g. InsuranceCheckerAgent, BillingAgent)

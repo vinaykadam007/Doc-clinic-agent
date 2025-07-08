@@ -1,0 +1,5 @@
+#!/Users/vinaykadam007/Documents/Projects 2024/doctor-appoitment-multiagent/docapp/bin/python3.12
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

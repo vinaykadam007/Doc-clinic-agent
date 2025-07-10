@@ -49,18 +49,6 @@ python main.py
 Interact through console prompts (or integrate with a UI layer)—enter symptoms, view suggested doctors and slots, confirm appointment, receive confirmation output.
 ```
 
-📂 **Repository Structure**
-```bash
-.
-├── main.py              # Entry point orchestrating agents
-├── patient_agent.py     # Patient interaction logic
-├── availability_agent.py# Doctor lookup & availability logic
-├── scheduler_agent.py   # Booking/rescheduling logic
-├── requirements.txt
-├── .env.example         # Sample environment configuration
-└── README.md            # Project documentation
-```
-
 🧑‍💻 **Example Session**
 ```less
 [PatientAgent] Hello! What health concern or specialty would you like to consult today?
